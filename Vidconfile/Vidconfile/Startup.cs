@@ -28,6 +28,7 @@ namespace Vidconfile
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<VidconfileDBContext>(x => x.UseSqlite(this.Configuration.GetConnectionString("DefaultConnection")));
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -44,6 +45,10 @@ namespace Vidconfile
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+
             app.UseMvc();
         }
     }
