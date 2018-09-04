@@ -9,7 +9,7 @@ using Vidconfile.Data;
 namespace Vidconfile.Data.Migrations
 {
     [DbContext(typeof(VidconfileDBContext))]
-    [Migration("20180904131019_InitialCreate")]
+    [Migration("20180904135402_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace Vidconfile.Data.Migrations
 
             modelBuilder.Entity("Vidconfile.Data.Models.VidconfileUser", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("PasswordHash");

@@ -6,7 +6,7 @@ namespace Vidconfile.Data.Models
 {
     public class VidconfileUser
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
 
         public string Username { get; set; }
 

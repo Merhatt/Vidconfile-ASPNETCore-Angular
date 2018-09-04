@@ -18,7 +18,7 @@ namespace Vidconfile.Data.Migrations
 
             modelBuilder.Entity("Vidconfile.Data.Models.VidconfileUser", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("PasswordHash");

@@ -7,7 +7,7 @@ using Vidconfile.Constants;
 
 namespace Vidconfile.ApiModels
 {
-    public class RegisterUserApiModel
+    public class LoginUserApiModel
     {
         [Required]
         [StringLength(UserConstants.MaxUsernameLength, MinimumLength = UserConstants.MinUsernameLength, ErrorMessage = "Your username length is invalid")]

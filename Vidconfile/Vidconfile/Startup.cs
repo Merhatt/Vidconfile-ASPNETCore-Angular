@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Vidconfile.Constants;
 using Vidconfile.Data;
 using Vidconfile.Data.Contracts;
 using Vidconfile.Services;
@@ -36,6 +40,18 @@ namespace Vidconfile
             services.AddDbContext<VidconfileDBContext>(x => x.UseSqlite(this.Configuration.GetConnectionString("DefaultConnection")));
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options => 
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.ASCII.GetBytes(this.Configuration.GetSection(AppSettingsConstants.Token).Value)),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
 
             //Utils
             services.AddScoped<IPasswordHasher, PasswordHasher>();
@@ -66,6 +82,7 @@ namespace Vidconfile
             .AllowAnyMethod()
             .AllowAnyHeader());
 
+            app.UseAuthentication();
             app.UseMvc();
         }
     }
