@@ -3,16 +3,13 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Vidconfile.Data.Models;
 
 namespace Vidconfile.Data.Contracts
 {
     public interface IVidconfileDBContext : IDisposable
     {
-        //IDbSet<Game> Games { get; set; }
-
-        //IDbSet<Category> Categories { get; set; }
-
-        //IDbSet<Platform> Platforms { get; set; }
+        DbSet<VidconfileUser> Users { get; set; }
 
         int SaveChanges();
 

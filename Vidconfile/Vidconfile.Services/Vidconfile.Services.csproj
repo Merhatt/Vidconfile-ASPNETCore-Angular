@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Vidconfile.Data.Models\Vidconfile.Data.Models.csproj" />
+    <ProjectReference Include="..\Vidconfile.Data\Vidconfile.Data.csproj" />
+    <ProjectReference Include="..\Vidconfile.Utils\Vidconfile.Utils.csproj" />
+  </ItemGroup>
+
 </Project>

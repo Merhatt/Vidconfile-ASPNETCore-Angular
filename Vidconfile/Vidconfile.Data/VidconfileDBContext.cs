@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Vidconfile.Data.Contracts;
+using Vidconfile.Data.Models;
 
 namespace Vidconfile.Data
 {
@@ -13,10 +14,7 @@ namespace Vidconfile.Data
             : base(options)
         {
         }
-        
-        //public static VidconfileDBContext Create()
-        //{
-        //    return new VidconfileDBContext();
-        //}
+
+        public DbSet<VidconfileUser> Users { get; set; }
     }
 }

@@ -12,10 +12,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Vidconfile.Data\Vidconfile.Data.csproj" />
+    <ProjectReference Include="..\Vidconfile.Services\Vidconfile.Services.csproj" />
+    <ProjectReference Include="..\Vidconfile.Utils\Vidconfile.Utils.csproj" />
   </ItemGroup>
 
 </Project>
