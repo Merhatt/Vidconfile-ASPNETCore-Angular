@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Vidconfile-View-Angular';
+
+  constructor() {}
 }

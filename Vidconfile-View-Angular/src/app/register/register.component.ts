@@ -6,6 +6,7 @@ import { AuthService } from '../services/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
 export class RegisterComponent implements OnInit {
   @Output() cancleRegister = new EventEmitter();
   model: any = {};
@@ -20,7 +21,7 @@ export class RegisterComponent implements OnInit {
        console.log('registered');
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   cancle() {

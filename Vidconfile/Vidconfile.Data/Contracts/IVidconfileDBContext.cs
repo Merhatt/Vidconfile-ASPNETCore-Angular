@@ -11,6 +11,8 @@ namespace Vidconfile.Data.Contracts
     {
         DbSet<VidconfileUser> Users { get; set; }
 
+        DbSet<Video> Videos { get; set; }
+
         int SaveChanges();
 
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
