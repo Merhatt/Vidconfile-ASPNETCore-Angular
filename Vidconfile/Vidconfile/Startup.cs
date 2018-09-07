@@ -25,6 +25,7 @@ using Vidconfile.Services;
 using Vidconfile.Services.Services;
 using Vidconfile.Utils;
 using Vidconfile.Utils.Contracts;
+using AutoMapper;
 
 namespace Vidconfile
 {
@@ -56,11 +57,14 @@ namespace Vidconfile
                     };
                 });
 
+            services.AddAutoMapper();
+
             //Utils
             services.AddScoped<IPasswordHasher, PasswordHasher>();
 
             //Services
             services.AddScoped<IVidconfileUserServices, VidconfileUserServices>();
+            services.AddScoped<IVideoServices, VideoServices>();
 
             //Data
             services.AddScoped<IVidconfileDBContext, VidconfileDBContext>();
