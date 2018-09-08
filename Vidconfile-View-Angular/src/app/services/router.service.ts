@@ -4,16 +4,16 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class RouterService {
+  export class RouterService {
 
-constructor(private router: Router) { }
+  constructor(private router: Router) { }
 
-navigateHome() {
-  this.router.navigate(['/home']);
-}
+  navigateHome() {
+    this.router.navigate(['/home']);
+  }
 
-navigateEditProfile() {
-  this.router.navigate(['/edit-profile']);
-}
+  navigateEditProfile() {
+    this.router.navigate(['/edit-profile']);
+  }
 
 }

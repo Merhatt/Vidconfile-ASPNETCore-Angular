@@ -37,7 +37,13 @@ namespace Vidconfile.Controllers
         [HttpPost("uploadvideo")]
         public IActionResult UploadVideo()
         {
+            var a = Request;
 
+            var file = Request.Form.Files[0];
+
+            var keys = Request.Form.Select(x => x.Key.ToString());
+
+            return Ok(new { keys = string.Join(", ", keys.ToArray()) });
         }
     }
 }
