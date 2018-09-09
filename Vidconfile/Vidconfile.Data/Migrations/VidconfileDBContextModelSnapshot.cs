@@ -16,6 +16,28 @@ namespace Vidconfile.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.2-rtm-30932");
 
+            modelBuilder.Entity("Vidconfile.Data.Models.Comment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid>("AuthorId");
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<long>("Likes");
+
+                    b.Property<Guid>("VideoId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("VideoId");
+
+                    b.ToTable("Comment");
+                });
+
             modelBuilder.Entity("Vidconfile.Data.Models.VidconfileUser", b =>
                 {
                     b.Property<Guid>("Id")
@@ -36,21 +58,6 @@ namespace Vidconfile.Data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Vidconfile.Data.Models.VidconfileUserVideo", b =>
-                {
-                    b.Property<Guid>("VidconfileUserId");
-
-                    b.Property<Guid>("VideoId");
-
-                    b.Property<Guid>("Id");
-
-                    b.HasKey("VidconfileUserId", "VideoId");
-
-                    b.HasIndex("VideoId");
-
-                    b.ToTable("VidconfileUserVideo");
-                });
-
             modelBuilder.Entity("Vidconfile.Data.Models.Video", b =>
                 {
                     b.Property<Guid>("Id")
@@ -58,7 +65,17 @@ namespace Vidconfile.Data.Migrations
 
                     b.Property<DateTime>("Created");
 
+                    b.Property<string>("Description");
+
+                    b.Property<long>("LikeCount");
+
+                    b.Property<string>("ThumbnailUrl");
+
+                    b.Property<string>("Title");
+
                     b.Property<Guid>("UploaderId");
+
+                    b.Property<byte[]>("VideoData");
 
                     b.HasKey("Id");
 
@@ -67,15 +84,15 @@ namespace Vidconfile.Data.Migrations
                     b.ToTable("Videos");
                 });
 
-            modelBuilder.Entity("Vidconfile.Data.Models.VidconfileUserVideo", b =>
+            modelBuilder.Entity("Vidconfile.Data.Models.Comment", b =>
                 {
-                    b.HasOne("Vidconfile.Data.Models.VidconfileUser", "VidconfileUser")
-                        .WithMany("LikedVideos")
-                        .HasForeignKey("VidconfileUserId")
+                    b.HasOne("Vidconfile.Data.Models.VidconfileUser", "Author")
+                        .WithMany("Comments")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Vidconfile.Data.Models.Video", "Video")
-                        .WithMany("LikedUsers")
+                        .WithMany("Comments")
                         .HasForeignKey("VideoId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

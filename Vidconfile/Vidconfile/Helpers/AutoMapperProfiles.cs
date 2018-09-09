@@ -15,6 +15,7 @@ namespace Vidconfile.Helpers
             //CreateMap<ModelFrom, ModelTo>();
 
             CreateMap<Video, GetAllVideoApiModel>();
+            CreateMap<Video, GetVideoByIdApiModel>();
         }
     }
 }

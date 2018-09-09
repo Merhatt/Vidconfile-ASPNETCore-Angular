@@ -15,6 +15,10 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
+  public static getToken() {
+    return localStorage.getItem('token');
+  }
+
   login(model: any) {
     return this.http.post(this.loginUrl, model)
     .pipe(

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Vidconfile.ApiModels;
+using Vidconfile.Data.Models;
 using Vidconfile.Services.Services;
 
 namespace Vidconfile.Controllers
@@ -35,15 +38,49 @@ namespace Vidconfile.Controllers
         }
 
         [HttpPost("uploadvideo")]
+        [Authorize]
         public IActionResult UploadVideo()
         {
-            var a = Request;
+            Guid cl = Guid.Parse(this.User.Claims
+                .FirstOrDefault(x => !x.Properties.FirstOrDefault(v => v.Value == "nameid").Equals(default(KeyValuePair<string, string>)))
+                .Value);
 
             var file = Request.Form.Files[0];
 
-            var keys = Request.Form.Select(x => x.Key.ToString());
+            byte[] fileBytes;
 
-            return Ok(new { keys = string.Join(", ", keys.ToArray()) });
+            using (var ms = new MemoryStream())
+            {
+                file.CopyTo(ms);
+                fileBytes = ms.ToArray();
+            }
+
+            var videoData = fileBytes;
+            var description = this.Request.Form["description"];
+            var thumbnailUrl = this.Request.Form["thumbnailUrl"];
+            var title = this.Request.Form["title"];
+
+            this.videoServices.UploadVideo(cl, videoData, description, thumbnailUrl, title);
+
+            return Ok();
+        }
+
+        [HttpGet("getbyid")]
+        public IActionResult GetById(Guid id)
+        {
+            Video video = this.videoServices.GetVideoById(id);
+
+            GetVideoByIdApiModel model = this.mapper.Map<GetVideoByIdApiModel>(video);
+
+            return Ok(model);
+        }
+
+        [HttpGet("getvideobyid")]
+        public FileContentResult GetVideoById(Guid id)
+        {
+            Video video = this.videoServices.GetVideoById(id);
+
+            return File(video.VideoData, "video/mp4", "video.mp4");
         }
     }
 }

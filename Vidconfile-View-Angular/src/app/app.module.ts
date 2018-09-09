@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AngularFileUploaderModule } from 'angular-file-uploader';
+import { JwtModule } from '@auth0/angular-jwt';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -20,6 +21,11 @@ import { AuthGuard } from './guards/auth.guard';
 import { VideoService } from './services/video.service';
 import { VideoListComponent } from './video-list/video-list.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
+import { VideoListMemberComponent } from './video-list-member/video-list-member.component';
+import { environment } from '../environments/environment';
+import { VideoPageComponent } from './video-page/video-page.component';
+
+
 
 @NgModule({
    declarations: [
@@ -29,7 +35,9 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
       HomeComponent,
       EditProfileComponent,
       VideoListComponent,
-      UploadVideoComponent
+      UploadVideoComponent,
+      VideoListMemberComponent,
+      VideoPageComponent
    ],
    imports: [
       BrowserModule,
@@ -38,7 +46,13 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
       ReactiveFormsModule,
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),
-      AngularFileUploaderModule
+      AngularFileUploaderModule,
+      JwtModule.forRoot({
+            config: {
+                  tokenGetter: AuthService.getToken,
+                  whitelistedDomains: environment.whitelistedAuthUrls
+            }
+      })
    ],
    providers: [
       AuthService,
@@ -46,7 +60,7 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
       AlertifyService,
       RouterService,
       AuthGuard,
-      VideoService
+      VideoService,
    ],
    bootstrap: [
       AppComponent

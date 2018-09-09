@@ -15,7 +15,7 @@ export class AuthGuard implements CanActivate {
               private alertify: AlertifyService) {}
 
   canActivate():  boolean {
-    if(this.authService.isLogged()) {
+    if (this.authService.isLogged()) {
       return true;
     }
 

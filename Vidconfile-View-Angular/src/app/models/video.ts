@@ -1,5 +1,8 @@
 export interface Video {
     id: string;
     likedCount: number;
-    thumbNailUrl: string;
+    thumbnailUrl: string;
+    title: string;
+    uploaderId: string;
+    videoData: any;
 }
