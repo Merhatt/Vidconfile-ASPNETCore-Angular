@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <div class="row container">
+        <div class="form-group centered">
+            <input name="searchInput" [(ngModel)]="this.searchInput" class="form-control" id="search" aria-describedby="searchHelp" placeholder="Search user">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div *ngFor="let user of users">
+        <div class="margin-right-10" *ngIf="this.userSearchFilter(user, this.searchInput)">
+          <app-user-list-member [user]="user"></app-user-list-member>
+        </div>
+      </div>
+    </div>
+  </div>

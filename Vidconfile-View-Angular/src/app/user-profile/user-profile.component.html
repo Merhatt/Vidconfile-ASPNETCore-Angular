@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="user-container">
+    <div class="name-container left">
+      <img src="{{user.profilePhotoUrl}}" alt="" class="img-circle">
+      <span class="username">
+        {{user.username}}
+      </span>
+    </div>
+    <div class="subscribe-container right">
+      <div class="subscribe-button">
+          <div *ngIf="this.isLogged()">
+              <div id="right" *ngIf="!this.isSubscribed">
+                  <button class="subscribe btn btn-danger" (click)="subscribe()">SUBSCRIBE {{this.user.subscriberCount}}</button>
+              </div>
+              <div id="right" *ngIf="this.isSubscribed">
+                  <button class="subscribe btn btn-danger" (click)="unsubscribe()">UNSUBSCRIBE {{this.user.subscriberCount}}</button>
+              </div>
+          </div>
+          <div *ngIf="!this.isLogged()">
+              <div id="right">
+                  <div class="subscribe crs-txt">SUBSCRIBERS: {{this.user.subscriberCount}}</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <hr>
+  <div class="videos">
+    <div class="row">
+      <div *ngFor="let video of this.user.videos">
+        <div class="margin-right-10">
+          <app-video-list-member [video]="video"></app-video-list-member>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

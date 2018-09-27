@@ -1,0 +1,9 @@
+.dropdown-toggle .dropdown-item {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 30px;
+    margin-right: 30px;
+    color: white;
+}

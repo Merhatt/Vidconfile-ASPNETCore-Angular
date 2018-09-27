@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="row container">
+      <div class="form-group centered">
+          <input name="searchInput" [(ngModel)]="this.searchInput" class="form-control" id="search" aria-describedby="searchHelp" placeholder="Search video">
+      </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div *ngFor="let video of videos">
+      <div class="margin-right-10" *ngIf="this.videoSearchFilter(video, this.searchInput)">
+        <app-video-list-member [video]="video"></app-video-list-member>
+      </div>
+    </div>
+  </div>
+</div>

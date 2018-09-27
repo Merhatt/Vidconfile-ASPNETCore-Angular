@@ -1,0 +1,86 @@
+<div class="mt-3 ml-5">
+    <div class="video-container">
+        <div>
+            <vg-player>
+                <vg-overlay-play></vg-overlay-play>
+                <vg-buffering></vg-buffering>
+
+                <vg-scrub-bar>
+                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                    <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                </vg-scrub-bar>
+
+                <vg-controls>
+                    <vg-play-pause></vg-play-pause>
+                    <vg-playback-button></vg-playback-button>
+
+                    <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+
+                    <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+
+                    <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+                    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+                    <vg-track-selector></vg-track-selector>
+                    <vg-mute></vg-mute>
+                    <vg-volume></vg-volume>
+
+                    <vg-fullscreen></vg-fullscreen>
+                </vg-controls>
+
+                <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+                    <source type="video/mp4" src="http://localhost:5000/api/videos/getvideobyid?id={{this.video.id}}">
+                </video>
+            </vg-player>
+        </div>
+        <div class="video-title mt-3">
+            {{this.video.title}}
+        </div>
+        <div class="mt-2">
+            {{this.video.views}} views
+        </div>
+        <hr />
+        <div id="container">
+            <div id="left">
+                <div class="crs-ptr" [routerLink]="[ '/users/',  this.user.id]">
+                    <img src="{{this.user.profilePhotoUrl}}" alt="Avatar" class="profile-pic">
+                    {{this.user.username}}
+                </div>
+            </div>
+            <div *ngIf="this.isLogged()">
+                <div id="right" *ngIf="!this.isSubscribed">
+                    <button class="subscribe btn btn-danger" (click)="subscribe()">SUBSCRIBE {{this.user.subscriberCount}}</button>
+                </div>
+                <div id="right" *ngIf="this.isSubscribed">
+                    <button class="subscribe btn btn-danger" (click)="unsubscribe()">UNSUBSCRIBE {{this.user.subscriberCount}}</button>
+                </div>
+            </div>
+            <div *ngIf="!this.isLogged()">
+                <div id="right">
+                    <div class="subscribe crs-txt">SUBSCRIBERS: {{this.user.subscriberCount}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear-both"></div>
+        <hr />
+        <div *ngIf="!this.showComments">
+            <button class="btn btn-warning" (click)="loadComments()">Load Comments</button>
+        </div>
+        <div class="container" *ngIf="this.showComments">
+            <div class="form-group">
+                <form #commentForm="ngForm" (ngSubmit)="uploadComment()">
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="comment" [(ngModel)]="sendCommentModel.commentText" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-success" type="submit">Comment</button>
+                    </div> 
+                </form> 
+            </div>
+            <div class="commments container" *ngFor="let videoComment of videoComments">
+                <app-comment [videoComment]="videoComment"></app-comment>
+            </div>
+        </div>
+    </div>
+</div>
