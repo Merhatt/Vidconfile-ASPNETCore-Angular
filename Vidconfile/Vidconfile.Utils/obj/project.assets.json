@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj",
+      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj",
       "projectName": "Vidconfile.Utils",
-      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj",
+      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj",
       "packagesPath": "C:\\Users\\Merhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Utils\\obj\\",
+      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Utils\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

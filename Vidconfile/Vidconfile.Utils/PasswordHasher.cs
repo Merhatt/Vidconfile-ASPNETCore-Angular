@@ -33,6 +33,16 @@ namespace Vidconfile.Utils
                 throw new NullReferenceException("password cannot be null or empty");
             }
 
+            if (passwordHash == null)
+            {
+                throw new NullReferenceException("passwordHash cannot be null or empty");
+            }
+
+            if (passwordSalt == null)
+            {
+                throw new NullReferenceException("passwordSalt cannot be null or empty");
+            }
+
             byte[] computedHash;
         
             using (var hmac = new HMACSHA512(passwordSalt))

@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vidconfile", "Vidconfile\Vi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2F1657FE-93D1-4B1B-A72C-2040FA4077ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidconfile.Services.Tests", "Vidconfile.Services.Tests\Vidconfile.Services.Tests.csproj", "{DE835738-36C7-4D09-80D9-1977EA0D65BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vidconfile.Services.Tests", "Vidconfile.Services.Tests\Vidconfile.Services.Tests.csproj", "{DE835738-36C7-4D09-80D9-1977EA0D65BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vidconfile.Utils.Tests", "Vidconfile.Utils.Tests\Vidconfile.Utils.Tests.csproj", "{8B772947-35C4-485B-9F60-43C2C8D6E573}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +49,17 @@ Global
 		{DE835738-36C7-4D09-80D9-1977EA0D65BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE835738-36C7-4D09-80D9-1977EA0D65BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE835738-36C7-4D09-80D9-1977EA0D65BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B772947-35C4-485B-9F60-43C2C8D6E573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B772947-35C4-485B-9F60-43C2C8D6E573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B772947-35C4-485B-9F60-43C2C8D6E573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B772947-35C4-485B-9F60-43C2C8D6E573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DE835738-36C7-4D09-80D9-1977EA0D65BD} = {2F1657FE-93D1-4B1B-A72C-2040FA4077ED}
+		{8B772947-35C4-485B-9F60-43C2C8D6E573} = {2F1657FE-93D1-4B1B-A72C-2040FA4077ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA6DDFE3-3C21-47E6-8155-29155E8C3C07}

@@ -6999,11 +6999,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services.Tests\\Vidconfile.Services.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services.Tests\\Vidconfile.Services.Tests.csproj",
       "projectName": "Vidconfile.Services.Tests",
-      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services.Tests\\Vidconfile.Services.Tests.csproj",
+      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services.Tests\\Vidconfile.Services.Tests.csproj",
       "packagesPath": "C:\\Users\\Merhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7022,8 +7022,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj": {
-              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj"
+            "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj": {
+              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj"
             }
           }
         }

@@ -3321,11 +3321,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj",
       "projectName": "Vidconfile.Services",
-      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj",
+      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services\\Vidconfile.Services.csproj",
       "packagesPath": "C:\\Users\\Merhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Services\\obj\\",
+      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3344,14 +3344,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj"
+            "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj"
             },
-            "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj": {
-              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj"
+            "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj": {
+              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj"
             },
-            "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj": {
-              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj"
+            "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj": {
+              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Utils\\Vidconfile.Utils.csproj"
             }
           }
         }

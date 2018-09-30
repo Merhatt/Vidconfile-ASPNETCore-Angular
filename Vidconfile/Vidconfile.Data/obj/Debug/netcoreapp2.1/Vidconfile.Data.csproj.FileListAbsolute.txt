@@ -34,3 +34,15 @@ C:\Users\Merhat\Desktop\Vid\Vidconfile-ASP.NETCore-Angular2\Vidconfile\Vidconfil
 C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.Models.dll
 C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.Models.pdb
 C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.csproj.CopyComplete
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.deps.json
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.dll
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.pdb
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.Models.dll
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\bin\Debug\netcoreapp2.1\Vidconfile.Data.Models.pdb
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.csprojAssemblyReference.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.csproj.CoreCompileInputs.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.AssemblyInfoInputs.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.AssemblyInfo.cs
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.csproj.CopyComplete
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.dll
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Data\obj\Debug\netcoreapp2.1\Vidconfile.Data.pdb

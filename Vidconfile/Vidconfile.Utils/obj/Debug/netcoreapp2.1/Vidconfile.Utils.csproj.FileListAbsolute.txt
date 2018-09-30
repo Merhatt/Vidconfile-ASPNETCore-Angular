@@ -25,3 +25,12 @@ C:\Users\Merhat\Desktop\Vid\Vidconfile-ASP.NETCore-Angular2\Vidconfile\Vidconfil
 C:\Users\Merhat\Desktop\Vid\Vidconfile-ASP.NETCore-Angular2\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.AssemblyInfo.cs
 C:\Users\Merhat\Desktop\Vid\Vidconfile-ASP.NETCore-Angular2\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.dll
 C:\Users\Merhat\Desktop\Vid\Vidconfile-ASP.NETCore-Angular2\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.pdb
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\bin\Debug\netcoreapp2.1\Vidconfile.Utils.deps.json
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\bin\Debug\netcoreapp2.1\Vidconfile.Utils.dll
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\bin\Debug\netcoreapp2.1\Vidconfile.Utils.pdb
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.csprojAssemblyReference.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.AssemblyInfoInputs.cache
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.AssemblyInfo.cs
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.dll
+C:\Users\Merhat\Desktop\Vids\VidconfileASPNETCoreAngular\Vidconfile\Vidconfile.Utils\obj\Debug\netcoreapp2.1\Vidconfile.Utils.pdb

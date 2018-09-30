@@ -3286,11 +3286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj",
       "projectName": "Vidconfile.Data",
-      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj",
+      "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data\\Vidconfile.Data.csproj",
       "packagesPath": "C:\\Users\\Merhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data\\obj\\",
+      "outputPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3309,8 +3309,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vidconfile\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj"
+            "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Merhat\\Desktop\\Vids\\VidconfileASPNETCoreAngular\\Vidconfile\\Vidconfile.Data.Models\\Vidconfile.Data.Models.csproj"
             }
           }
         }
