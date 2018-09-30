@@ -1,0 +1,14 @@
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\Vidconfile.Tests.deps.json
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\Vidconfile.Tests.runtimeconfig.json
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\Vidconfile.Tests.runtimeconfig.dev.json
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\Vidconfile.Tests.dll
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\bin\Debug\netcoreapp2.1\Vidconfile.Tests.pdb
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.csprojAssemblyReference.cache
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.AssemblyInfoInputs.cache
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.AssemblyInfo.cs
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.dll
+C:\Users\Merhat\Desktop\Vidconfile\Vidconfile\Vidconfile.Tests\obj\Debug\netcoreapp2.1\Vidconfile.Tests.pdb
