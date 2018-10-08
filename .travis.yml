@@ -1,6 +1,10 @@
+dist: trusty
+sudo: required
 language: csharp
-solution: Vidconfile/Vidconfile.sln
 mono: none
 dotnet: 2.0.0
+solution: Vidconfile.sln
 script:
- - dotnet restore
+  - cd Vidconfile
+  - dotnet restore
+  - dotnet build -c Release
