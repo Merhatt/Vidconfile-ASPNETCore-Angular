@@ -15,7 +15,7 @@ namespace Vidconfile
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-        }sadasd
+        }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
