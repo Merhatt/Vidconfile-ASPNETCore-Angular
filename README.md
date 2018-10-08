@@ -2,7 +2,7 @@
 
 Vidconfile is a video-sharing website made using Web API with ASP.NET Core and Angular 6
 
-![VideoImage](/images/VideoPage.png)
+![VideoImage](/Images/VideoPage.png?raw=true "Optional Title")
 
 # New Features!
   - Edit your profile
